@@ -35,7 +35,7 @@ def reSize(img):
     cv2.imwrite("D:/test2.jpg", img2)
 
 # 添加页码
-myfont = ImageFont.truetype("D:/FZYingXueJW.TTF", 20)
+myfont = ImageFont.truetype("./FZYingXueJW.TTF", 20)
 
 def addColText(draw, left, top, text, font):
     for i in range(0, len(text)):
@@ -67,7 +67,7 @@ def toA5(img, out):
     bg.save(out)
 
 if __name__ == '__main__':
-    rootdir = 'D:/AAAAA'
+    rootdir = 'D:/in'
     count = 1
     p = 1
     list1 = os.listdir(rootdir)  # 列出文件夹下所有的目录与文件
@@ -79,8 +79,8 @@ if __name__ == '__main__':
             reSize(img)
             addSubR(Image.open('D:/test2.jpg'), count)
             addSubL(Image.open('D:/test1.jpg'), count+1)
-            toA5(cv2.imread('D:/test22.jpg'), "D:/BBBBB/%d.jpg"%(count))
-            toA5(cv2.imread('D:/test11.jpg'), "D:/BBBBB/%d.jpg"%(count+1))
+            toA5(cv2.imread('D:/test22.jpg'), "D:/out/%d.jpg"%(count))
+            toA5(cv2.imread('D:/test11.jpg'), "D:/out/%d.jpg"%(count+1))
             count += 2
         print("已完成{}张".format(p))
         p += 1

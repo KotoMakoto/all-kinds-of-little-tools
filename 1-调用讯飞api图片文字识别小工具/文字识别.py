@@ -10,9 +10,9 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-URL = "http://webapi.xfyun.cn/v1/service/v1/ocr/general"
-APPID = "47cfa8ba"
-API_KEY = "e50788325d155c916acd2d46a4a6294b"
+URL = "此处为URL"
+APPID = "此处填写APPID"
+API_KEY = "此处填写API_KEY"
 rootdir = ''
 
 def getHeader():

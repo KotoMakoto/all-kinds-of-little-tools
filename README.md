@@ -1,35 +1,32 @@
 # all-kinds-of-little-tools
 
 #### 介绍
-自己写的（或整理别人的）各种各样的使用小工具
+​	自己写的（或整理别人的）各种各样的使用小工具
 
 #### 软件架构
-都是一些小工具，使用的语言不限。每更新一个工具都会对应写上使用说明
 
-
-#### 安装教程
-
-
+​	都是一些小工具，使用的语言不限。每更新一个工具都会对应写上使用说明
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 调用讯飞api文字识别小工具
 
-#### 参与贡献
+   复制代码，使用pip安装所需的工具，并在讯飞官网申请api，填写自己申请到的URL、APPID和APP_KEY即可。
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+   
 
+2. 图片分割并添加中文页码小工具
 
-#### 特技
+   示例：
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+   这是未分割且未添加页码的原图
+
+   ![1](./2-图片分割并添加中文页码小工具/原图.jpg)
+
+   这是已分割且已添加页码的输出结果
+
+   <img src="./2-图片分割并添加中文页码小工具/1.jpg" alt="1" style="zoom: 25%;" />
+
+   <img src="./2-图片分割并添加中文页码小工具/2.jpg" alt="2" style="zoom:25%;" />
+
+   使用时将待处理图片放到in文件夹中，运行代码后输出结果在out文件夹中。
